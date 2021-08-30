@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useSelector } from "react-redux";
-import { mapNames } from "../../consts";
+import { mapNames } from "../../utils";
 import { selectMapData, selectPhaseCountdowns } from "../../state";
 import "./scoreboardHeader.scss";
 
