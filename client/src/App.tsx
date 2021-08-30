@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import socketIOClient from "socket.io-client";
-import { useDispatch, useSelector } from "react-redux";
-import { addData, selectData } from "./state";
+import { useDispatch } from "react-redux";
+import { addData } from "./state";
 import { GameState } from "csgo-gsi-types";
+import { ScoreboardContainer } from "./components";
+import "./styles/index.scss";
 
 function App() {
   const dispatch = useDispatch();
-  const gameData = useSelector(selectData);
-  console.log(gameData);
 
   useEffect(() => {
     const socket = socketIOClient("http://127.0.0.1:4000");
@@ -19,7 +19,11 @@ function App() {
     };
   }, [dispatch]);
 
-  return <div className="App">CSGO Match Stats</div>;
+  return (
+    <div className="scoreboard">
+      <ScoreboardContainer />
+    </div>
+  );
 }
 
 export default App;
