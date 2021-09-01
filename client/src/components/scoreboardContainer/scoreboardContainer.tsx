@@ -4,8 +4,8 @@ import { selectMapData, selectAllPlayers } from "../../state";
 import { useSelector } from "react-redux";
 import { mapNames } from "../../utils";
 import { TeamType } from "csgo-gsi-types";
-import "./scoreboardContainer.scss";
 import { ScoreboardPlayerStats } from "../scoreboardPlayerStats";
+import "./scoreboardContainer.scss";
 
 export const ScoreboardContainer: FC = () => {
   const mapData = useSelector(selectMapData);
@@ -14,7 +14,9 @@ export const ScoreboardContainer: FC = () => {
   const sortPlayerData = useCallback(
     (side: TeamType) => {
       if (!playerData) return undefined;
-      return Object.values(playerData).filter((item) => item.team === side);
+      return Object.values(playerData)
+        .filter((item) => item.team === side)
+        .sort((a, b) => b.match_stats.score - a.match_stats.score);
     },
     [playerData]
   );

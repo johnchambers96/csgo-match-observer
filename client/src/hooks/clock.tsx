@@ -25,7 +25,6 @@ export const useTimer = () => {
 
   useEffect(() => {
     if (["live", "bomb", "defuse"].includes(phaseData?.phase || "")) {
-      console.log(phaseData);
       setTime(Math.round(Number(phaseData?.phase_ends_in || 115)));
     } else {
       setTime(115);
