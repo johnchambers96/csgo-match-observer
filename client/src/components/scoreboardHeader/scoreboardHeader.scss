@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 40px;
   width: 100%;
 
   &__round,
@@ -38,8 +39,9 @@
   &__time {
     .scoreboard-header__text {
       color: var(--primary-color);
-      :first-child {
-        color: var(--secondary-color);
+      img {
+        padding-left: 4px;
+        vertical-align: middle;
       }
     }
   }

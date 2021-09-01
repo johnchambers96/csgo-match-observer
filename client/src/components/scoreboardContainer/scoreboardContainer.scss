@@ -4,5 +4,11 @@
   margin: auto;
   max-width: 650px;
   padding: 10px;
-  background-color: lightblue;
+  height: 445px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 50%);
+  background-color: var(--bg-color);
 }
