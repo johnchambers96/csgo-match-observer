@@ -8,6 +8,7 @@ import "./scoreboardContainer.scss";
 import { ScoreboardPlayerStats } from "../scoreboardPlayerStats";
 
 export const ScoreboardContainer: FC = () => {
+
   const mapData = useSelector(selectMapData);
   const playerData = useSelector(selectAllPlayers);
 
