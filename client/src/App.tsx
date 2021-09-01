@@ -21,16 +21,17 @@ function App() {
 
   // check if we have map data, if not not we are not
   // in a game and need to promp to connect (placeholder)
+  // might need to find a better way to check if game is active
   const mapData = useSelector(selectMapData);
 
   return mapData ?
       (
-          <div className="scoreboard">
+          <div className="scoreboard h-100">
             <ScoreboardContainer/>
           </div>
       ):
       (
-          <div>
+          <div className="loading-screen">
             <span className="connect-text">Please connect to a game...</span>
             <div
                 className="scoreboard-container"

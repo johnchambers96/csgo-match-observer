@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2602028e-d8b2-455a-9186-c98af51d2f39" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/scoreboardContainer/scoreboardContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/scoreboardContainer/scoreboardContainer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/scoreboardContainer/scoreboardContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/scoreboardContainer/scoreboardContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/scoreboardPlayerStats/scoreboardPlayerStats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/scoreboardPlayerStats/scoreboardPlayerStats.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +57,9 @@
       <workItem from="1630518764298" duration="29000" />
       <workItem from="1630518840762" duration="878000" />
       <workItem from="1630520804449" duration="1287000" />
-      <workItem from="1630522622470" duration="46000" />
+      <workItem from="1630522622470" duration="3221000" />
+      <workItem from="1630526071474" duration="1782000" />
+      <workItem from="1630528048533" duration="1106000" />
     </task>
     <servers />
   </component>

@@ -29,10 +29,9 @@ export const ScoreboardContainer: FC = () => {
         backgroundImage: `url(/image/maps/${mapNames(mapData?.name || "")}.png`,
       }}
     >
-      <ScoreboardHeader />
-      <ScoreboardPlayerStats stats={sortPlayerData("CT")} />
-      {/* Timeline */}
-      <ScoreboardPlayerStats stats={sortPlayerData("T")} />
+      <ScoreboardHeader/>
+      <ScoreboardPlayerStats stats={sortPlayerData("CT")} team={"ct"}/>
+      <ScoreboardPlayerStats stats={sortPlayerData("T")} team={"t"}/>
     </div>
   );
 };
