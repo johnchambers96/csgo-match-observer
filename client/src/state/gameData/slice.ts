@@ -19,6 +19,8 @@ export const selectMapData = (state: gameDataType) => state.gameData.map;
 export const selectRoundData = (state: gameDataType) => state.gameData.round;
 export const selectPhaseCountdowns = (state: gameDataType) =>
   state.gameData.phase_countdowns;
+export const selectAllPlayers = (state: gameDataType) =>
+  state.gameData.allplayers;
 
 export const { addData } = gameDataSlice.actions;
 
