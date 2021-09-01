@@ -1,0 +1,48 @@
+.scoreboard-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+
+  &__round,
+  &__time {
+    font-size: var(--small-font-size);
+    line-height: var(--small-font-line-height);
+    margin: auto 0;
+  }
+
+  &__round {
+    .scoreboard-header__text {
+      color: var(--secondary-color);
+      :first-child {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  &__score {
+    font-size: var(--large-font-size);
+    line-height: var(--large-font-line-height);
+    color: var(--primary-color);
+    font-weight: 700;
+    &--t {
+      padding-left: 2%;
+      color: var(--t-color);
+    }
+    &--ct {
+      padding-right: 2%;
+      color: var(--ct-color);
+    }
+  }
+
+  &__time {
+    .scoreboard-header__text {
+      color: var(--primary-color);
+      img {
+        padding-left: 4px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

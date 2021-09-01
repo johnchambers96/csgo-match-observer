@@ -15,6 +15,11 @@ export const gameDataSlice = createSlice({
 });
 
 export const selectData = (state: gameDataType) => state.gameData;
+export const selectMapData = (state: gameDataType) => state.gameData.map;
+export const selectRoundData = (state: gameDataType) => state.gameData.round;
+export const selectPhaseCountdowns = (state: gameDataType) =>
+  state.gameData.phase_countdowns;
+
 export const { addData } = gameDataSlice.actions;
 
 export default gameDataSlice.reducer;

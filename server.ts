@@ -9,7 +9,7 @@ const jsonParser = require("body-parser").json();
 const server = require("http").createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:4000",
+    origin: ["http://localhost:4000", "http://localhost:3000"],
   },
 });
 
@@ -26,7 +26,7 @@ app.get("*", (req: Request, res: Response) => {
   res.sendFile("index.html", { root });
 });
 
-app.post("/observer", jsonParser, (req: Request, res: Response<GameState>) => {
+app.post("/observer", jsonParser, (req: Request, res: Response) => {
   gameData = req.body;
   io.emit("data", gameData);
 });
