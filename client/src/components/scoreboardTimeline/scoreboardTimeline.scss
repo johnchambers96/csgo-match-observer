@@ -1,0 +1,48 @@
+.scoreboard-timeline {
+  display: flex;
+  padding: 1% 0;
+  height: 54px;
+  position: relative;
+
+  &__first-half {
+    height: 100%;
+    width: 50%;
+    border: solid hsla(0, 0%, 100%, 0.1);
+    border-width: 0 1px 0 0;
+    display: flex;
+    flex-direction: row;
+    &::after {
+      content: "";
+      border: solid hsla(0, 0%, 100%, 0.1);
+      border-width: 0 0 1px 0;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+    }
+  }
+  &__second-half {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__round {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1%;
+    .scoreboard-timeline__side {
+      display: flex;
+      flex: 1;
+      max-width: 15px;
+      margin: auto;
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}

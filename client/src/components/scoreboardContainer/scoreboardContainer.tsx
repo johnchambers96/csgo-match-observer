@@ -6,9 +6,9 @@ import { mapNames } from "../../utils";
 import { TeamType } from "csgo-gsi-types";
 import { ScoreboardPlayerStats } from "../scoreboardPlayerStats";
 import "./scoreboardContainer.scss";
+import { ScoreboardTimeline } from "../scoreboardTimeline";
 
 export const ScoreboardContainer: FC = () => {
-
   const mapData = useSelector(selectMapData);
   const playerData = useSelector(selectAllPlayers);
 
@@ -29,9 +29,10 @@ export const ScoreboardContainer: FC = () => {
         backgroundImage: `url(/image/maps/${mapNames(mapData?.name || "")}.png`,
       }}
     >
-      <ScoreboardHeader/>
-      <ScoreboardPlayerStats stats={sortPlayerData("CT")} team={"ct"}/>
-      <ScoreboardPlayerStats stats={sortPlayerData("T")} team={"t"}/>
+      <ScoreboardHeader />
+      <ScoreboardPlayerStats stats={sortPlayerData("CT")} team={"ct"} />
+      <ScoreboardTimeline shouldFlip={mapData ? mapData?.round > 14 : false} />
+      <ScoreboardPlayerStats stats={sortPlayerData("T")} team={"t"} />
     </div>
   );
 };

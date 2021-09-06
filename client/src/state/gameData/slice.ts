@@ -22,6 +22,16 @@ export const selectPhaseCountdowns = (state: gameDataType) =>
 export const selectAllPlayers = (state: gameDataType) =>
   state.gameData.allplayers;
 
+export const selectFirstHalf = (state: gameDataType) => {
+  if (!state.gameData?.map?.round_wins) return [];
+  return Object.values(state.gameData.map.round_wins).slice(0, 15);
+};
+
+export const selectSecondHalf = (state: gameDataType) => {
+  if (!state.gameData?.map?.round_wins) return [];
+  return Object.values(state.gameData.map.round_wins).slice(15, 30);
+};
+
 export const { addData } = gameDataSlice.actions;
 
 export default gameDataSlice.reducer;

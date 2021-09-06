@@ -9,6 +9,10 @@ export const mapNames = (map: string): string => {
       return "inferno";
     case "workshop/1885085042/de_nuke":
       return "nuke";
+    case "workshop/1885082371/de_dust2":
+      return "dust2";
+    case "workshop/1409243131/de_mirage":
+      return "mirage";
     default:
       return "Add map name here";
   }
