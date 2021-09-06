@@ -13,7 +13,7 @@ export const ScoreboardHeader: FC = () => {
   if (!mapData) return null;
 
   return (
-    <div className="scoreboard-header">
+    <div className="scoreboard-header mb-20">
       <div className="scoreboard-header__round">
         <span className="scoreboard-header__text">
           R: <span>{`${mapData.round + 1} - ${mapNames(mapData.name)}`}</span>
