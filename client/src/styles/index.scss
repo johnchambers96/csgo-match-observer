@@ -11,6 +11,15 @@ html, .App {
   justify-content: center;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex {
+  display: flex;
+}
+
 .scoreboard {
   width: 100%;
   display: flex;
