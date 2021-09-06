@@ -1,14 +1,9 @@
 @import "./theme.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Oswald:700&amp;amp;subset=latin-ext");
 
-html, .App {
+html {
   height: 100%;
-}
-
-#root {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 .flex-column {
@@ -20,24 +15,9 @@ html, .App {
   display: flex;
 }
 
-.scoreboard {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
 body {
   height: 100%;
   margin: 0;
-}
-
-.loading-screen {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .w-100 {
@@ -69,4 +49,3 @@ body {
     background: #bf963a;
   }
 }
-

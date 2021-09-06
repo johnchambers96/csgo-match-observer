@@ -2,21 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 68%;
-  height: 60%;
-  padding: 2rem;
+  flex: 1;
+  padding: 1rem;
 
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 50%);
   background-color: var(--bg-color);
-}
-
-.connect-text {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-size: 48px;
-  font-weight: 400;
-  color: #7b7b7b;
 }
