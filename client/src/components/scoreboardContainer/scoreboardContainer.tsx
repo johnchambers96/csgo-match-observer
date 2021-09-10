@@ -30,9 +30,17 @@ export const ScoreboardContainer: FC = () => {
       }}
     >
       <ScoreboardHeader />
-      <ScoreboardPlayerStats stats={sortPlayerData("CT")} team={"ct"} />
+      <ScoreboardPlayerStats
+        stats={sortPlayerData("CT")}
+        side="CT"
+        teamData={mapData?.team_ct}
+      />
       <ScoreboardTimeline shouldFlip={mapData ? mapData?.round > 14 : false} />
-      <ScoreboardPlayerStats stats={sortPlayerData("T")} team={"t"} />
+      <ScoreboardPlayerStats
+        stats={sortPlayerData("T")}
+        side="T"
+        teamData={mapData?.team_t}
+      />
     </div>
   );
 };

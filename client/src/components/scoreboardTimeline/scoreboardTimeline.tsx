@@ -75,11 +75,11 @@ export const ScoreboardTimeline: FC<ScoreboardTimelineProps> = ({
           <div key={UniqueId()} className="scoreboard-timeline__round">
             <ScoreboardTimelineRound
               data={selectSecondHalfData[index]}
-              getMap={TSideIconMap}
+              getMap={CTSideIconMap}
             />
             <ScoreboardTimelineRound
               data={selectSecondHalfData[index]}
-              getMap={CTSideIconMap}
+              getMap={TSideIconMap}
             />
           </div>
         ))}

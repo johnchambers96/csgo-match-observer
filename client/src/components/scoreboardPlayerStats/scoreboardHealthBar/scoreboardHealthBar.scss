@@ -1,0 +1,30 @@
+.scoreboard-health-bar {
+  width: 100%;
+  height: 12px;
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  &__hp-remaining {
+    height: 100%;
+    border-radius: 3px;
+    &--high {
+      background-color: rgba(50, 152, 0, 0.75);
+    }
+    &--medium {
+      background-color: rgba(197, 175, 0, 0.75);
+    }
+    &--low {
+      background-color: rgba(228, 10, 10, 0.75);
+    }
+  }
+  &__value {
+    color: var(--white);
+    text-shadow: 0 1px 1px var(--black);
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    font-size: 10px;
+    text-align: center;
+  }
+}
